@@ -1,0 +1,297 @@
+a {
+  text-decoration: none;
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  display: none;
+}
+
+#heidy {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://epicpaws.modeltheme.com/wp-content/uploads/2023/03/epicpaws-banner-heidi.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  position: relative;
+}
+#heidy .box-text {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#heidy .box-text h1 {
+  width: 70%;
+  color: white;
+  font-size: 2rem;
+}
+#heidy .box-text p {
+  width: 65%;
+  color: white;
+  font-size: 20px;
+}
+#heidy .box-text a {
+  color: white;
+  background-color: orangered;
+  padding: 15px 25px;
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  border-radius: 8mm;
+}
+
+#safe {
+  padding: 7rem 0;
+}
+#safe .box {
+  margin: 10px 0;
+  padding: 4rem 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2588235294);
+  position: relative;
+  transition: 0.3s;
+}
+#safe .box:hover {
+  color: white;
+}
+#safe .box:hover::before {
+  width: 100%;
+}
+#safe .box::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  transition: 0.3s;
+  width: 2%;
+  height: 100%;
+  background-color: green;
+  top: 0;
+  border-radius: 15px;
+  left: 0;
+}
+
+#pick {
+  width: 90%;
+  margin: auto;
+}
+#pick .keyframe-box {
+  display: none;
+}
+#pick .box-text {
+  width: 90%;
+  margin: auto;
+}
+#pick .box-img {
+  position: relative;
+}
+#pick .box-img img {
+  border-radius: 15px;
+}
+#pick .box-img .dog-foto {
+  position: absolute;
+  width: 300px;
+  left: -50px;
+  bottom: -40px;
+}
+
+@media (min-width: 576px) {
+  #header {
+    z-index: 5;
+    padding: 3rem 0;
+    position: fixed;
+    width: 100%;
+    display: block;
+    background-color: whitesmoke;
+  }
+  #header .boxes {
+    width: 95%;
+    margin: auto;
+  }
+  #header .boxes .logo {
+    width: 15%;
+  }
+  #header .boxes ul {
+    width: 70%;
+    position: relative;
+  }
+  #header .boxes ul li a {
+    padding: 25px 20px;
+    display: block;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  #header .boxes ul li.home:hover .drop-menu {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+  }
+  #header .boxes ul li.home .drop-menu {
+    position: absolute;
+    background-color: rgb(169, 0, 0);
+    width: 230px;
+    transition: 0.3s;
+    opacity: 0;
+    top: 110%;
+    visibility: hidden;
+  }
+  #header .boxes ul li.home .drop-menu li.drop-1 {
+    position: relative;
+  }
+  #header .boxes ul li.home .drop-menu li.drop-1:hover ul {
+    opacity: 1;
+    visibility: visible;
+    left: 100%;
+  }
+  #header .boxes ul li.home .drop-menu li.drop-1 ul {
+    position: absolute;
+    left: 110%;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    border-left: 1px solid grey;
+    width: 100px;
+    transition: 0.3s;
+    background-color: whitesmoke;
+  }
+  #header .boxes ul li.home .drop-menu li a {
+    padding: 4px 15px;
+  }
+  #header .boxes .nav_right a {
+    padding-top: 15px;
+    padding-right: 45px;
+    padding-bottom: 15px;
+    padding-left: 45px;
+    color: #ffffff;
+    text-decoration-color: #ffffff;
+    background-color: #ff553e;
+    border-top-left-radius: 30px;
+    font-size: 14px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+  #header .boxes .nav_right a:hover {
+    box-shadow: 0 0 20px 0 rgba(255, 68, 0, 0.553);
+    color: #ffffff;
+    text-decoration-color: #ffffff;
+    background-color: #ff553e;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    padding-top: 20px;
+    padding-right: 48px;
+    padding-bottom: 20px;
+    padding-left: 45px;
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) {
+  #heidy {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://epicpaws.modeltheme.com/wp-content/uploads/2023/03/epicpaws-banner-heidi.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  #heidy .box-text {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  #heidy .box-text h1 {
+    width: 70%;
+    color: white;
+    font-size: 3.5rem;
+  }
+  #heidy .box-text p {
+    width: 65%;
+    color: white;
+    font-size: 20px;
+  }
+  #heidy .box-text a {
+    color: white;
+    background-color: orangered;
+    padding: 15px 25px;
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 8mm;
+  }
+  #safe {
+    padding: 7rem 0;
+  }
+  #safe .box {
+    padding: 4rem 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2588235294);
+    position: relative;
+    transition: 0.3s;
+  }
+  #safe .box:hover {
+    color: white;
+  }
+  #safe .box:hover::before {
+    width: 100%;
+  }
+  #safe .box::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    transition: 0.3s;
+    width: 2%;
+    height: 100%;
+    background-color: green;
+    top: 0;
+    border-radius: 15px;
+    left: 0;
+  }
+  #pick {
+    padding: 4rem 0;
+    width: 98%;
+    margin: auto;
+  }
+  #pick .keyframe-box {
+    display: block;
+    padding-left: 50px;
+    width: 90%;
+    margin: auto;
+  }
+  #pick .keyframe-box img {
+    animation: myAni 4s linear infinite;
+  }
+  #pick .box-text {
+    width: 90%;
+    margin: auto;
+  }
+  #pick .box-img {
+    position: relative;
+  }
+  #pick .box-img img {
+    border-radius: 15px;
+  }
+  #pick .box-img .dog-foto {
+    position: absolute;
+    width: 200px;
+    left: -20px;
+    bottom: -20px;
+  }
+}
+@keyframes myAni {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=style.css.map */
